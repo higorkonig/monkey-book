@@ -1,0 +1,386 @@
+@font-face {
+    font-family: Josefin;
+    src: url('../fonts/JosefinSlab-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #eef2f3;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    display: flex;
+    width: 100px;
+    margin-left: 32%;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h1 {
+    font-family: Josefin, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.campo {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #666;
+    font-family: Josefin, sans-serif;
+}
+
+.campo::placeholder {
+    color: #999;
+    font-family: Josefin, sans-serif;
+    font-size: 18px;
+}
+
+
+.campo:active {
+    transform: translateY(-2px);
+    transition: all 0.2s;
+}
+
+.btn {
+    margin-top: 10px;
+    border: 0;
+    border-radius: 4px;
+    height: 48px;
+    font-size: 20px;
+    background: #f3bc55;
+    font-weight: bold;
+    color: #FFf;
+    cursor: pointer;
+    font-family: Josefin, sans-serif;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    transition: all 0.2s;
+}
+
+.esqueciSenha {
+    font-family: Josefin, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.esqueciSenha:hover {
+    transform: translateY(-1px);
+    transition: all 0.2s;
+}
+
+.error {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 25px;
+    color: #d63031;
+}
+
+.alerta {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 25px;
+    color: #eeab2e;
+}
+
+.sucesso {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 25px;
+    color: #449913;
+}
+
+.login label {
+    font-family: Josefin, sans-serif;
+    font-weight: bold;
+    margin-left: 3px;
+    margin-top: 20px;
+    margin-bottom: -15px;
+    color: #666262;
+}
+
+.login p {
+    font-family: Josefin, sans-serif;
+    font-weight: bold;
+    color: #666262;
+    text-align: center;
+    margin-bottom: -10px;
+    margin-top: 15px;
+}
+
+.retorno {
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: Josefin, sans-serif;
+    color: #666262;
+    font-size: 20px;
+}
+
+
+.retorno:hover {
+    transform: translateY(-1px);
+    transition: all 0.2s;
+}
+
+
+#field {
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 5px #000;
+    padding: 3px;
+    width: 200px;
+}
+
+#field * {
+    background: transparent;
+    border: none;
+}
+
+
+
+.main {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    font-family: Josefin, sans-serif;
+}
+
+#menu ul {
+    margin-top: 30px;
+    padding: 0px;
+    background-color: #eef2f3;
+    list-style: none;
+}
+
+#menu ul li {
+    padding: 35px;
+    display: inline;
+}
+
+#menu ul li a {
+    padding: 10px 40px;
+    display: inline-block;
+
+    background-color: #f3bc55;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 3px solid #f3bc55;
+}
+
+#menu ul li a:hover {
+    background-color: #eef2f3;
+    color: #6D6D6D;
+    border-bottom: 3px solid #f3bc55;
+    transform: translateY(-1px);
+    transition: all 0.2s;
+}
+
+
+
+.lista {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+.lista li {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista li img {
+    max-width: 50%;
+    border-radius: 5px 5px 0 0;
+}
+
+.img-list {
+    margin-left: 25%;
+    margin-bottom: 10px;
+}
+
+.lista li footer {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 15px 20px;
+    text-align: left;
+    border-radius: 0 0 5px 5px;
+}
+
+.lista li footer strong {
+    font-size: 20px;
+    color: #333;
+}
+
+.lista li footer p {
+    font-size: 18px;
+    line-height: 20px;
+    color: #999;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.lista li .buttons {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.lista li .buttons a {
+    height: 50px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 0;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+}
+.lista li .buttons img {
+    margin-top: 7%;
+}
+
+.lista li .buttons a:hover img {
+    transform: translateY(-3px);
+    transition: all 0.2s
+}
+
+.paginacao {
+    margin-top: 35px;
+    margin-bottom: 30px; 
+}
+
+.paginacao a {
+    text-decoration: none;
+    font-family: Josefin, sans-serif;
+    font-size: 20px;
+    color: #4b4747;
+}
+
+.paginacao h6 {
+    margin-bottom: 15px;
+}
+
+#tabela h1 {
+    margin-top: 3%;
+}
+
+#tabela .btn {
+    padding-left: 15px;
+    padding-right: 15px; 
+    background-color: #00b894;
+}
+
+#tabela table {
+    margin-top: 4%;
+    margin-left: 6%;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+
+#tabela th {
+    border: 1px solid black;
+    padding: 10px;
+    padding-left: 102px;
+    padding-right: 102px; 
+}
+
+#tabela td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+#up {
+    width: 100%;
+    max-width: 800px;
+    margin-left: 10%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#up label {
+    font-family: Josefin, sans-serif;
+    font-weight: bold;
+    margin-left: 3px;
+    margin-top: 20px;
+    margin-bottom: -15px;
+    color: #666262;
+}
+
+#up p {
+    font-size: 20px;
+    font-family: Josefin, sans-serif;
+    font-weight: bold;
+    color: #666262;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#up textarea {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    text-align: justify;
+    color: #666;
+    font-family: Josefin, sans-serif;
+}
+
+#up .arquivo {
+    padding: 8px;
+}
+
+
+
+.footer {
+    font-family: Josefin, sans-serif;
+    font-size: 18px;
+    color: #666262;
+    margin-top: -3%;
+    text-align: center;
+    align-items: center;
+}
