@@ -13,3 +13,7 @@ configurar as variaveis de acordo com as infos do seu banco de dados :), por fal
 email: admin@admin.com
 
 senha: admin
+
+
+
+**Ainda falta umas coisas para ser acabadas :)**
